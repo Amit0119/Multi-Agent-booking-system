@@ -6,3 +6,4 @@ langchain-core
 pydantic
 langgraph-checkpoint-sqlite
 requests
+python-dotenv
