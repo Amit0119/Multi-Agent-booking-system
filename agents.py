@@ -7,8 +7,11 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import SystemMessage
 import datetime
 
-# Initialize the Gemini model (gemini-1.5-flash is extremely fast and great at tool calling)
-llm = ChatGoogleGenerativeAI(model="gemini-3.5-flash")
+# Using a 'lite' model to get higher free-tier rate limits, and adding built-in retries
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.0-flash-lite-001",
+    max_retries=5
+)
 
 def triage_node(state):
     """
