@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+langchain-groq
+langgraph
+langchain-core
+pydantic
+langgraph-checkpoint-sqlite
+requests
