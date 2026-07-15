@@ -47,9 +47,7 @@ def booking_node(state):
                 "2. ALWAYS check availability first using the check_availability tool. "
                 "3. If a slot is taken, negotiate alternative available slots. "
                 "4. Once a time is agreed upon and you have their email, use the reserve_slot tool. "
-                "5. IMMEDIATELY after a successful reservation, execute the send_booking_notification tool. "
-                "CRITICAL INSTRUCTION: When you need to call a tool, you MUST output ONLY the tool call. "
-                "Do NOT output any conversational text, explanations, or thinking process alongside the tool call. Just call the tool directly."
+                "5. IMMEDIATELY after a successful reservation, execute the send_booking_notification tool."
     )
     
     messages = [sys_msg] + state["messages"]
